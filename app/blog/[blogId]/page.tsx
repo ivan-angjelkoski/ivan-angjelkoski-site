@@ -3,6 +3,8 @@ import React from 'react';
 import { prisma } from '../../../lib/prisma';
 import Container from '../../Container';
 import { marked } from 'marked';
+import hljs from 'highlight.js';
+
 type Props = {
 	params: {
 		blogId: string;
@@ -31,6 +33,11 @@ const BlogPage = async ({ params }: Props) => {
 	const markdown = marked.parse(blog.content!, {
 		gfm: true,
 		breaks: true,
+		highlight: function (code, lang) {
+			const language = hljs.getLanguage(lang) ? lang : 'javascript';
+			return hljs.highlight(code, { language }).value;
+		},
+		langPrefix: 'hljs language-javascript',
 	});
 	return (
 		<Container className="font-raleway">

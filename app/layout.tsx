@@ -1,5 +1,6 @@
 import '../styles/globals.css';
 import Navbar from './Navbar';
+import 'highlight.js/styles/atom-one-dark.css';
 
 export default function RootLayout({
 	children,
