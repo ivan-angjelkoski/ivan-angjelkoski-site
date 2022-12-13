@@ -9,8 +9,8 @@ type Props = {
 	};
 };
 
-export const revalidate = false;
-export const dynamic = 'force-static';
+export const revalidate = 86000;
+export const dynamic = 'auto';
 
 const getBlog = async (blogId: string) => {
 	const blog = await prisma.post.findUnique({
@@ -57,5 +57,13 @@ const BlogPage = async ({ params }: Props) => {
 		</Container>
 	);
 };
+
+export async function generateStaticParams() {
+	const posts = await prisma.post.findMany();
+
+	return posts.map((post) => ({
+		blogId: post.id,
+	}));
+}
 
 export default BlogPage;
