@@ -5,6 +5,9 @@ import BlogItem from './BlogItem';
 
 type Props = {};
 
+export const revalidate = 0;
+export const dynamic = 'force-dynamic';
+
 const getBlogs = async () => {
 	return await prisma.post.findMany({
 		// include: { author: { select: { name: true } } },
