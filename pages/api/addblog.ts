@@ -25,6 +25,8 @@ export default async function handler(
 				published: true,
 			},
 		});
+		await res.revalidate('/blog');
+
 		res.status(200).json(post);
 	} else {
 		res.status(400).json({ message: 'No Data' });

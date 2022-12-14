@@ -5,8 +5,8 @@ import BlogItem from './BlogItem';
 
 type Props = {};
 
-export const revalidate = 0;
-export const dynamic = 'force-dynamic';
+export const revalidate = 86400;
+// export const dynamic = 'force-dynamic';
 
 const getBlogs = async () => {
 	return await prisma.post.findMany({

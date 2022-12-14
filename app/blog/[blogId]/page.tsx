@@ -11,7 +11,7 @@ type Props = {
 	};
 };
 
-export const revalidate = 86000;
+export const revalidate = 86400;
 export const dynamic = 'auto';
 
 const getBlog = async (blogId: string) => {
