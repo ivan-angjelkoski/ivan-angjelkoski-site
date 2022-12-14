@@ -10,7 +10,7 @@ const IndexPage = (props: Props) => {
 			<h1 className="text-5xl md:text-7xl py-10 md:py-14 bg-gradient-to-t from-blue-400 to-blue-200 text-transparent bg-clip-text">
 				Welcome
 			</h1>
-			<div className="flex items-center flex-col md:flex-row">
+			<div className="flex items-center flex-col-reverse md:flex-row">
 				<p className="text-lg text-justify">
 					My name is <b>Ivan Angjelkoski</b> and i am a front-end web developer
 					with a solid background in JavaScript frameworks like <b>React</b> and{' '}
