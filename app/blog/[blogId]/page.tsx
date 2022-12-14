@@ -58,7 +58,7 @@ const BlogPage = async ({ params }: Props) => {
 				</h4>
 			</div>
 			<div
-				className="markdown prose prose-lg prose-invert font-poppins"
+				className="markdown prose md:prose-lg prose-invert font-poppins"
 				dangerouslySetInnerHTML={{ __html: markdown }}
 			></div>
 		</Container>
