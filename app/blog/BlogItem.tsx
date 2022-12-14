@@ -36,7 +36,7 @@ const BlogItem = ({
 					</h4>
 				</div>
 				<div>
-					<p className="my-2">{description}</p>
+					<p className="my-2 opacity-70">{description}</p>
 				</div>
 			</div>
 		</div>

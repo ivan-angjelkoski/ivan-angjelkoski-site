@@ -49,7 +49,7 @@ const BlogPage = async ({ params }: Props) => {
 			</Link>
 			<img
 				src={blog.image}
-				className="w-full my-5"
+				className="w-full my-5 aspect-video object-cover"
 			/>
 			<div className="border-b-2 border-blue-300 pb-2 my-10">
 				<h2 className="text-5xl my-3">{blog?.title}</h2>
