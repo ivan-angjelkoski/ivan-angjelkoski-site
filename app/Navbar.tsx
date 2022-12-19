@@ -59,7 +59,10 @@ const Navbar = (props: Props) => {
 						<NavMenuDesktop links={NAV_LINKS} />
 					</div>
 					<div className="block md:hidden">
-						<IconButton onClick={onToggle}>
+						<IconButton
+							aria-label="menu"
+							onClick={onToggle}
+						>
 							<AiOutlineMenu />
 						</IconButton>
 					</div>
