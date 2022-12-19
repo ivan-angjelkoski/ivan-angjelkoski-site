@@ -21,7 +21,7 @@ module.exports = {
 				},
 			},
 			fontFamily: {
-				rounded: ['"M PLUS Rounded 1c"', 'sans-serif'],
+				rounded: ['"M PLUS Rounded 1c"', '"Raleway"', 'sans-serif'],
 				raleway: ['"Raleway"', 'sans-serif'],
 				poppins: ['"Poppins","Raleway"', 'sans-serif'],
 				nanum: ['"Nanum Myeongjo"', 'sans-serif'],
