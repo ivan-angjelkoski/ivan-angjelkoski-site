@@ -32,6 +32,10 @@ export default async function Head({ params }: { params: { blogId: string } }) {
 				content="blog"
 			/>
 			<meta
+				property="description"
+				content={blog?.description}
+			/>
+			<meta
 				property="og:description"
 				content={blog?.description}
 			/>
@@ -41,6 +45,22 @@ export default async function Head({ params }: { params: { blogId: string } }) {
 			/>
 			<meta
 				property="og:image"
+				content={blog!.image}
+			/>
+			<meta
+				property="twitter:title"
+				content={title}
+			/>
+			<meta
+				property="twitter:description"
+				content={blog?.description}
+			/>
+			<meta
+				property="twitter:url"
+				content={`https://ivan-angjelkoski-site.vercel.app/blog/${blog!.id}`}
+			/>
+			<meta
+				property="twitter:image"
 				content={blog!.image}
 			/>
 			<link
