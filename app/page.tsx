@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
 import Container from './Container';
+import Footer from './Footer';
+import Skills from './Skills';
 
 type Props = {};
 
@@ -26,6 +28,10 @@ const IndexPage = (props: Props) => {
 					className="w-40 h-40 object-cover rounded-[50%] shrink-0 my-5 mx-10"
 				/>
 			</div>
+			<div className="pt-10">
+				<Skills />
+			</div>
+			<Footer />
 		</Container>
 	);
 };

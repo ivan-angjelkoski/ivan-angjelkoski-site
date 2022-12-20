@@ -39,3 +39,7 @@ label {
 .markdown img {
 	width: 100%;
 }
+
+.skills_section p {
+	@apply my-5 tracking-wider text-lg border-l-2 pl-4 hover:border-blue-400 leading-relaxed;
+}
