@@ -82,8 +82,7 @@ const Skills = (props: Props) => {
 				In summary, my skills in React, NextJS, Express, MongoDB, SQL, Prisma,
 				Tailwindcss, Chakraui, and GraphQL have allowed me to build a wide range
 				of web applications and APIs, and I am confident in my ability to
-				continue learning and growing as a programmer. Thank you for considering
-				my application.
+				continue learning and growing as a programmer.
 			</p>
 		</div>
 	);
