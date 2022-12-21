@@ -36,6 +36,13 @@ const contactLinks = [
 	},
 ];
 
+function calculateAge(dateBorn: string) {
+	const born = new Date(dateBorn).getTime();
+	const now = Date.now();
+	const age = new Date(now - born).getFullYear() - 1970;
+	return age;
+}
+
 const ContactPage = (props: Props) => {
 	return (
 		<Container>
@@ -49,7 +56,9 @@ const ContactPage = (props: Props) => {
 			/>
 			<div className="font-rounded">
 				<div className="border-b-2 pb-4">
-					<h1 className="text-center text-3xl">Ivan Angjelkoski,27</h1>
+					<h1 className="text-center text-3xl">
+						Ivan Angjelkoski,{calculateAge('1995-01-25')}
+					</h1>
 					<p className="text-center">North Macedonia - Gostivar</p>
 				</div>
 				<ul className="space-y-4 mt-5">
