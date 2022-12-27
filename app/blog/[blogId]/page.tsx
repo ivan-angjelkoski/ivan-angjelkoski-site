@@ -11,8 +11,8 @@ type Props = {
 	};
 };
 
-export const revalidate = false;
-export const dynamic = 'auto';
+// export const revalidate = false;
+// export const dynamic = 'auto';
 
 const getBlog = async (blogId: string) => {
 	const blog = await prisma.post.findUnique({
