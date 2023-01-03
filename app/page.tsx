@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import Container from './Container';
+import CurrentWork from './CurrentWork';
 import Footer from './Footer';
 import Skills from './Skills';
 
@@ -29,6 +30,7 @@ const IndexPage = (props: Props) => {
 				/>
 			</div>
 			<div className="pt-10">
+				<CurrentWork />
 				<Skills />
 			</div>
 			<Footer />
