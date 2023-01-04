@@ -17,7 +17,7 @@ const CurrentWork = (props: Props) => {
 						src="https://media.licdn.com/dms/image/C4D0BAQFGx02zsodRSQ/company-logo_200_200/0/1617206593474?e=1680739200&v=beta&t=sM21XgcH1W8gkhzv4qctmfE0qEhcpiqj7_LhFnsiUpw"
 					/>
 					<div>
-						<h2 className="text-2xl transition-cplors duration-200">
+						<h2 className="text-2xl transition-colors duration-200">
 							DrWeb Solutions
 						</h2>
 						<p className="opacity-70 transition-colors duration-200">
