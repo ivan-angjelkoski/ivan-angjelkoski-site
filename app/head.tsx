@@ -9,6 +9,8 @@ export default function Head() {
 			<link
 				rel='icon'
 				href='/IA_Transparent.svg'
+				sizes='any'
+				type='image/svg+xml'
 			/>
 			<title>Ivan Angjelkoski</title>
 			<meta
