@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	scrollbar-gutter: stable;
+}
+
 input[type='text'],
 textarea {
 	@apply bg-transparent border border-blue-300 rounded-md p-2 my-2;
