@@ -1,27 +1,22 @@
-import React from 'react';
+import React from "react";
+import InjectiveLogo from "./InjectiveLogo";
 
 type Props = {};
 
 const CurrentWork = (props: Props) => {
 	return (
-		<div className="border-t border-white py-5">
-			<h1 className="text-2xl">Employment History</h1>
-			<div className="flex justify-center">
+		<div className='border-t border-white py-5'>
+			<h1 className='text-2xl'>Working at</h1>
+			<div className='flex justify-center'>
 				<a
-					target={'_blank'}
-					href="https://drweb.mk/"
-					className="flex items-center space-x-2 my-5 hover:text-blue-400"
+					target={"_blank"}
+					href='https://injective.com/'
+					className='flex items-center  my-5 group'
 				>
-					<img
-						className="w-20 h-20 object-cover"
-						src="https://media.licdn.com/dms/image/C4D0BAQFGx02zsodRSQ/company-logo_200_200/0/1617206593474?e=1680739200&v=beta&t=sM21XgcH1W8gkhzv4qctmfE0qEhcpiqj7_LhFnsiUpw"
-					/>
-					<div>
-						<h2 className="text-2xl transition-colors duration-200">
-							DrWeb Solutions
-						</h2>
-						<p className="opacity-70 transition-colors duration-200">
-							2023/Jan - Present
+					<div className='flex flex-col items-center'>
+						<InjectiveLogo />
+						<p className='tracking-wider text-lg bg-gradient-to-br from-blue-400 to-blue-600 bg-clip-text text-transparent group-hover:to-blue-300'>
+							Frontend Engineer
 						</p>
 					</div>
 				</a>
